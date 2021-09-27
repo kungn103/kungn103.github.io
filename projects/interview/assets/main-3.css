@@ -1,0 +1,104 @@
+body {
+  font-family: 'Courier Prime', monospace; 
+  color: #8E8E8E;
+  font-size: 36px;
+  padding-top: 50px;
+  padding-right: 120px;
+  padding-left: 120px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*cursor stuff*/ 
+body:hover{
+  cursor: url('slash-grey.png'), auto;
+}
+
+.name{
+  display: inline-block;
+}
+
+.name:hover{
+  cursor: url("slash-pink.png"),auto;
+}
+
+.question:hover{
+  cursor: url("slash-green.png"), auto;
+}
+
+.answer:hover{
+  cursor: url("slash-pink.png"), auto;
+}
+
+/*title*/
+h1 { 
+  font-size: 48px;
+  text-align: left;
+ }
+
+.name{
+  color: #F36FFF;
+}
+
+/*introduction*/
+.introduction{
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.intro-slash{
+  font-weight: bold;
+}
+
+/*font weights + color*/ 
+.question{
+  font-weight:bolder;
+}
+
+.answer{
+  color: black;
+}
+
+/*strokes*/
+.green-slash{
+  font-weight: bolder;
+  color: #B0E952;
+}
+
+.pink-slash{
+  font-weight: bolder;
+  color: #F36FFF;
+}
+
+
+/*navigation*/
+.navigation{
+  padding-top: 80px;
+  padding-bottom: 100px;
+  font-size: 24px;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color:#E5E5E5 ;
+}
+
+a:visited {
+  color: #E5E5E5;
+}
+
+.nav2{
+padding: 20px;
+}
+
+.nav3{
+background: #0F1F32;
+background: -webkit-linear-gradient(to right, #0F1F32 0%, #0F1F32 100%);
+background: -moz-linear-gradient(to right, #0F1F32 0%, #0F1F32 100%);
+background: linear-gradient(to right, #0F1F32 0%, #0F1F32 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+

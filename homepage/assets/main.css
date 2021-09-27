@@ -1,0 +1,38 @@
+body{
+	font-family: 'Barlow', sans-serif;
+	background-color: darkslategray;
+	color: whitesmoke;
+	text-align: center;
+	padding: 200px;
+	cursor: url('cursor.cur'), auto;
+}
+
+.navigation{
+	font-size: 30px;
+}
+
+
+h1: hover{
+	color: greenyellow;
+}
+
+a:link{
+	color: whitesmoke;
+}
+
+a:active{
+	color: greenyellow;
+}
+
+a:visited{
+	color: lightgrey;
+}
+
+a:hover{
+	cursor: url('cursor.cur'), auto;
+}
+
+.nav1{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}

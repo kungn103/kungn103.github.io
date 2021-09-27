@@ -1,0 +1,130 @@
+
+body {
+  font-family: futura; 
+  font-style: bold;
+  font-size: 24px;
+  text-align: center;
+  color:#434343 ;
+  padding-top: 50px;
+  padding-right: 120px;
+  padding-left: 120px;
+  padding
+}
+
+body:hover{
+  cursor: url("cursor1.png"), auto;
+}
+
+h1 { 
+  font-size: 48px;
+ }
+
+/*highlight over jessie in title*/
+.name{
+  display: inline-block;
+  width: 252px;
+  height: 70px;
+  background-image:url("title-pink.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+  background-position: center;
+  z-index: +1;
+}
+
+/*make name zoom*/
+.name:hover{
+  transform: scale(1.5);
+}
+
+/* gradient lines */
+hr {width: 690px;
+  height: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(176,233,82);
+  background: linear-gradient(90deg, rgba(176,233,82,1) 0%, rgba(243,111,255,1) 100%);
+  border: 0 none;
+}
+
+/*line 1*/ 
+.line-1{
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+/*themis highlights*/ 
+.themis{
+  height: 33px;
+  background-image:url("themis.png");
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+  background-position: center;
+  position: relative;
+  z-index: +1;
+  }
+
+/*jessie highlights*/ 
+.jessie{
+  height: 33px;
+  background-image:url("jessie.png");
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+  background-position: bottom;
+  position: all;
+  z-index: +1;
+  padding-top: 80px;
+  }
+
+/*spacing*/
+.answer{
+  padding-bottom: 80px;
+}
+
+.final{
+  margin-bottom: 80px;
+}
+
+.line-2{
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+/*navigation*/
+.navigation{
+  padding-bottom: 100px;
+  font-style: medium ;
+}
+
+.nav1{
+  background: #B0E952;
+  background: -webkit-linear-gradient(to bottom, #B0E952 0%, #F36FFF 100%);
+  background: -moz-linear-gradient(to bottom, #B0E952 0%, #F36FFF 100%);
+  background: linear-gradient(to bottom, #B0E952 0%, #F36FFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:link {
+  text-decoration: none;
+  color:#434343 ;
+}
+
+a:active{
+    background: #B0E952;
+  background: -webkit-linear-gradient(to bottom, #B0E952 0%, #F36FFF 100%);
+  background: -moz-linear-gradient(to bottom, #B0E952 0%, #F36FFF 100%);
+  background: linear-gradient(to bottom, #B0E952 0%, #F36FFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+a:visited {
+  color: #434343;
+}
+
+.nav2{
+padding: 20px;
+}
+  

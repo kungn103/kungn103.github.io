@@ -1,3 +1,33 @@
 body{
-	font-family: futura;
+	font-family: 'Barlow', sans-serif;
+	background-color: darkslategray;
+	color: whitesmoke;
+	text-align: center;
+	padding: 200px;
+	cursor: url('cursor.cur'), auto;
+}
+
+/*switch images*/
+
+.eyes-closed{
+	position: relative;
+	width: 200px;
+}
+
+.eyes-open{
+	position: absolute;
+	width: 200px;
+	right: 620px;
+	opacity: 0;
+	transition: opacity .2s;
+	z-index: 2;
+}
+
+.enter:hover img.eyes-open {
+	opacity: 1;
+
+}
+
+a:hover{
+	cursor: url('cursor.cur'),auto;
 }
