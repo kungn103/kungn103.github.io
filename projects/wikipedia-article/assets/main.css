@@ -1,0 +1,282 @@
+/*optima font setup*/
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima'), url('OPTIMA.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Optima Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima Italic'), url('Optima_Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Optima Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima Bold'), url('OPTIMA_B.woff') format('woff');
+}
+
+/*typesetting*/
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  background-color: #f5f5f5;
+  color:#434343 ;
+  text-align: justify;
+  text-align-last: left;
+
+}
+
+
+@media (min-width: 992px) {
+  body {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+body:hover{
+  cursor: url("cursor.cur"), auto;
+}
+
+h1{
+  font-family: Optima Bold;
+}
+
+h2{
+  font-family: Optima;
+}
+
+h3{
+  font-family: Optima;
+}
+
+h4{
+  font-family: Optima;
+}
+
+a{
+  cursor: url("cursor.cur"), auto;
+}
+
+.superscript{
+  vertical-align: super;
+  font-size: xx-small;
+  color: #737373;
+}
+
+figcaption{
+  font-size: smaller;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+/*navbar*/ 
+.navbar {
+  background-color: #d9d9d9;
+  font-family: Optima;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 24px;
+  color: #434343;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  font-size: 24px;  
+  border: none;
+  outline: none;
+  color: #434343;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #bababa;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #bababa;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #434343;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #bababa;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*adding flex*/
+
+/*intro + title*/
+
+.container-1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing:  border-box;
+}
+
+@media (min-width: 968px){
+.intro-box{
+  width: 50%;
+  margin-top: 70px;
+}
+}
+
+.introduction{
+  font-size: 22px;
+  padding-top: 50px;
+}
+
+.summary-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.summary{
+  font-size: smaller;
+  margin-left: 100px;
+  margin-top: 0px;
+}
+
+/*history*/ 
+.container-2{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sliced-spam{
+  align-items: center;
+  margin: auto;
+}
+
+/*int-usage*/
+.container-3{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+}
+
+.us-territories{
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.baked-spam{
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.spam-musubi{
+  align-items: center;
+  margin: auto;
+}
+
+.se-asia{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.spamsilog{
+  align-items: center;
+  margin: auto;
+}
+
+.east-asia{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spamrice{
+  align-items: center;
+  margin: auto;
+}
+
+.container-4{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spam-museum {
+  align-items: center;
+  margin: auto;
+}
+
+.container-5{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.table{
+  align-items: center;
+  margin: auto;
+}
+
+.container-6{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.container-7{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.refs{
+  align-self: flex-end;
+}
+
+hr{
+  background-color: #bababa;
+}
+
+
+
+
