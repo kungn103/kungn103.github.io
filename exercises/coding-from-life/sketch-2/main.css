@@ -1,0 +1,380 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: #434343;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: white;
+  margin: 2.5vw auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+
+.table { 
+  width: 80%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  transform: skew(40deg);
+  background-color: #ebebeb;
+  z-index: 1;
+  top: 80%;
+  left: 5%;
+ }
+
+.table-leg{
+  width: 3%;
+  height: 20%;
+  background: #e0e0e0;
+  position: absolute;
+  top: 80%;
+}
+
+.mirror{
+  width: 32%;
+  height: 30%;
+  background: #dea743;
+  position:absolute;
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
+  left: 47%;
+  filter: drop-shadow(0 0 0.75rem grey)
+}
+
+.mirror-glass{ 
+  position: absolute;
+  background: rgb(209,242,244);
+  background: linear-gradient(219deg, rgba(209,242,244,1) 0%, rgba(109,124,122,1) 100%);
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  border-bottom-left-radius: 600px;
+  border-bottom-right-radius: 600px;
+  filter: drop-shadow(0 0 0.75rem grey);
+ }
+
+.vase{
+  position: absolute;
+  background: #93b5b1;
+  width: 8%;
+  height: 20%;
+  margin-left: 47%;
+  top: 50%;
+  z-index: 3;
+  opacity: 50%;
+}
+
+.vase-base{
+  position: absolute;
+  background: #93b5b1;
+  width: 89%;
+  height: 30%;
+  top: 100%;
+  transform: perspective(10px) rotateX(-5deg);
+  z-index: 3;
+  margin-left: 5%;
+}
+
+.vase-base-2{
+  position: absolute;
+  background: #93b5b1;
+  width: 84%;
+  height: 30%;
+  top: 120%;
+  transform: perspective(10px) rotateX(5deg);
+  margin-left: 9%;
+}
+
+.vase-base-3{
+  position: absolute;
+  background: #93b5b1;
+  width: 94%;
+  height: 30%;
+  top: 150%;
+  margin-left: 3%;
+  filter: drop-shadow(0px 10px 4px #4d4d4d);
+}
+
+.flower{
+  position: absolute;
+  width: 7%;
+  height: 11%;
+  background: #8f5151;
+  border-radius: 50%;
+  margin-left: 47%;
+  top: 30%;
+}
+
+.left-eye{
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: #262626;
+  border-radius: 50%;
+  margin-left: 20%;
+  top: 30%;
+  z-index: 2;
+}
+
+.right-eye{
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: #262626;
+  border-radius: 50%;
+  margin-left: 60%;
+  top: 30%;
+  z-index: 2;
+}
+
+.mouth{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  background: #262626;
+  border-radius: 50%;
+  margin-left: 35%;
+  top: 50%;
+  z-index: 2;
+}
+
+.stem{
+  position: absolute;
+  width: 25%;
+  height: 400%;
+  background: #2a3628;
+  top: 98%;
+  z-index: 2;
+  margin-left: 38%;
+}
+
+.petal{
+  position: absolute;
+  border-radius: 5px 150px 3px 150px;
+  background: #8f5151;
+  width: 50%;
+  height: 50%;
+  top: 460%;
+  z-index: 2;
+  margin-left: 150%;
+  filter: drop-shadow(10px 10px 4px #4d4d4d);
+}
+
+.leaf{
+  position: absolute;
+  border-radius: 5px 150px 3px 150px;
+  background: #2a3628;
+  width: 40%;
+  height: 40%;
+  top: 200%;
+  z-index: 2;
+  margin-left: 10%;
+}
+
+.candle{
+  position: absolute;
+  background:#f7f1dc;
+  width: 2%;
+  height: 10%;
+  top: 50%;
+  margin-left: 40%;
+}
+
+.wick{
+  position: absolute;
+  background: #262626;
+  width: 10%;
+  height: 20%;
+  top: -20%;
+  margin-left: 40%;
+  z-index: 3;
+}
+
+.candle-holder{
+  position: absolute;
+  background:#dea743;
+  width:100%;
+  height:40%;
+  top:70%;
+  margin-left:-2.5%;
+}
+
+.candle-base{
+  position: absolute;
+  background: #dea743;
+  width: 30%;
+  height: 330%;
+  top: 70%;
+  margin-left: 35%;
+  z-index: 2;
+}
+
+.candle-base2{
+  position: absolute;
+  background: #dea743;
+  width: 150%;
+  height: 20%;
+  z-index: 2;
+  border-radius: 50%;
+  perspective: 800%;
+  margin-left: -20%;
+  top: 400%;
+  filter: drop-shadow(5px 4px 4px #4d4d4d);
+}
+
+.candle-2{
+position: absolute;
+  position: absolute;
+  background:#f7f1dc;
+  width: 2%;
+  height: 10%;
+  top: 50%;
+  margin-left: 61%;
+}
+
+.wick-2{
+  position: absolute;
+  background: #262626;
+  width: 10%;
+  height: 20%;
+  top: -20%;
+  margin-left: 40%;
+  z-index: 3;
+}
+
+.candle-holder-2{
+ position: absolute;
+  background:#dea743;
+  width:100%;
+  height:40%;
+  top:70%;
+  margin-left:-2.5%;
+}
+
+.candle-base-2{
+ position: absolute;
+  background: #dea743;
+  width: 30%;
+  height: 330%;
+  top: 70%;
+  margin-left: 35%;
+  z-index: 2;
+}
+
+
+.candle-base22{
+  position: absolute;
+  background: #dea743;
+  width: 150%;
+  height: 20%;
+  z-index: 2;
+  border-radius: 50%;
+  perspective: 800%;
+  margin-left: -20%;
+  top: 400%;
+  filter: drop-shadow(5px 4px 4px #4d4d4d);
+}
+
+.bird{
+  position: absolute;
+  background: #2f4b62;
+  width: 7% ;
+  height:7% ;
+  z-index: 2;
+  border-radius: 50%;
+  margin-left: 25%;
+  top: 65%;
+}
+
+.head{
+  position: absolute;
+  background: #2f4b62;
+  width: 60%;
+  height:60%;
+  border-radius: 50%;
+  margin-left: 80%;
+  top: 10%;
+}
+
+.beak{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 0.5vh solid transparent;
+  border-left: 1.5vh solid #2f4b62;
+  border-bottom: 0.5vh solid transparent;
+  margin-left: 135%;
+  top:30%;
+}
+
+.tail{
+  width: 0;
+  height: 0;
+  border-bottom: 2vh solid #2f4b62;
+  border-right: 4vh solid transparent;
+}
+
+.birdeye{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  background: #262626;
+  border-radius: 50%;
+  margin-left: 120%;
+  bottom: 60%;
+  z-index: 3;
+}
+
+.bird-stand{
+  position: absolute;
+  background:#2f4b62;
+  height: 300%;
+  width: 10%;
+  top: 100%;
+  margin-left: 40%;
+}
+
+.bird-base{
+  position: absolute;
+  background:#2f4b62;
+  height: 15%;
+  width: 50%;
+  border-radius: 50%;
+  top: 385%;
+  margin-left: 20%;
+  filter: drop-shadow(10px 4px 4px #4d4d4d);
+}
+
+.pumpkin{
+  position: absolute;
+  height: 20%;
+  width: 15%;
+  background: #f58721;
+  border-radius: 50%;
+  top: 64%;
+  z-index: 2;
+  margin-left: 60%;
+  filter: drop-shadow(10px 10px 4px #4d4d4d);
+}
+
+.pumpstem{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 2vh solid transparent;
+  border-right: 2vh solid transparent;
+  border-top: 4vh solid #3f5438;
+  margin-left: 30%;
+  top: -10%;
+}
