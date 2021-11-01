@@ -27,5 +27,9 @@ a:visited{
 
 .nav1{
 	padding-top: 20px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
+}
+
+.nav2{
+	padding-bottom: 20px;
 }

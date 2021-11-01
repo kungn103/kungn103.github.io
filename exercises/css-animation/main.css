@@ -1,0 +1,44 @@
+
+body {
+  background-color: darkgray;
+  font-family: arial;
+  color: red;
+  font-size: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes lenySpin{
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#leny {
+  animation: lenySpin 5s ease-out infinite;
+  height: 500px;
+
+}
+
+
+
+
+
