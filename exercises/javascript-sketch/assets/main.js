@@ -12,15 +12,15 @@ document.onmousemove = function(){
 
 
 
-// let bite = document.getElementsById("bite");
+let bite = document.getElementsById("bite");
 
-// function eat() {
-//   bite.classList.add("eat");
-//   button.classList.toggle("buttonOn");
-// }
+function eat() {
+  bite.classList.add("eat");
+  button.classList.toggle("buttonOn");
+}
 
-// let button = document.querySelector(".button-2");
-// button.addEventListener("click", eat);
+let button = document.querySelector(".button-2");
+button.addEventListener("click", eat);
 
 
 // change flavor
