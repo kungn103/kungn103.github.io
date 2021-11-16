@@ -10,42 +10,28 @@ document.onmousemove = function(){
   }
 }
 
+//taking bite 
 
-
-let bite = document.getElementsById("bite");
+let bite = document.querySelector(".bite");
+let button2 = document.querySelector(".button-2");
 
 function eat() {
-  bite.classList.add("eat");
-  button.classList.toggle("buttonOn");
+  bite.classList.toggle("eat");
 }
-
-let button = document.querySelector(".button-2");
-button.addEventListener("click", eat);
+button2.addEventListener("click", eat);
 
 
 // change flavor
-let button = document.querySelector(".button");
 
-let grape = document.querySelector(".grape");
-let choc = document.querySelector(".choc");
-let wine = document.querySelector(".wine");
-let orange = document.querySelector(".orange");
-let blueberry = document.querySelector(".blueberry");
-let plum = document.querySelector(".plum");
-let berry = document.querySelector(".berry");
+let button1 = document.querySelector(".button");
+let colors = ["#6e8cf0","#fcb4c5", "#ab87ed", "#b9f0c6", "#ebf0b9", "#f0eeda"];
+let body = document.querySelector(".flavor");
 
-let colors = ["grape", "choc", "wine", "orange", "blueberry", "plum", "berry"];
-let flavor = document.querySelector(".cls-2");
-
-// function newColor() {
-//   let randIndex = Math.floor(Math.random() * colors.length);
-//   let randColor = colors[randIndex];
-//   flavor.style.filter = randColor;
-// }
-
-function flavorChange() {
-  flavor.classList.add("colors")
+function newColor() {
+  let randIndex = Math.floor(Math.random() * colors.length);
+  let randColor = colors[randIndex];
+  body.style.fill = randColor;
 }
 
-button.addEventListener("click", newColor);
+button1.addEventListener("click", newColor);
 

@@ -4,35 +4,84 @@ body {
   font-family: barlow;
 }
 
-section {
-  display:  flex;
-  flex-direction:  column;
+body.hover{
+  cursor: ;
+}
+
+.wrapper {
+  display: flex;
   justify-content: center;
-  align-items:  center;
-  height:  100vh;
+  align-items: center;
 }
 
-.button {
-  padding: 20px 50px;
-  border-radius: 30px;
-  background-color:  white;
-  color:  black;
-  font-size:  60px;
-  font-size: 20px;
-  text-align:  center;
-  transition:  all 100ms;
+
+
+.door {
+  margin-left:600px;
+  margin-top: 300px;
+  /*display: flex;*/
 }
 
-.button:hover {
-  background-color: #DEB887;
-  cursor:  pointer;
+
+.heads{
+  display: inline-flex;
+  flex-direction: row;
 }
 
-.buttonOn {
-  background-color:  black;
-  color:  white;
+.heads{
+  z-index: 1;
 }
 
-.light {
-  background-color: papayawhip;
+.eyes{
+ position: absolute;
+ top: 40%;
+/* transform: translate(-30%);*/
+ width: 100%;
+ z-index: 2;
+ text-align: center;
+ margin-left: 105%;
 }
+
+.eye{
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  display: inline-flex;
+  margin-left: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball{
+  width: 40px;
+  height: 40px;
+  background:#1c1c1c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  /*z-index: 3;*/
+}
+
+.sound{
+  /*display: flex;
+  flex-direction: row;*/
+  position: absolute;
+  margin-left: 1240px;
+  margin-top: 100px;
+  transition: transform 2s ease;
+
+}
+
+.sound:hover {
+  transform:  scale(1.5);
+}
+
+
+/*.sound:hover{
+margin-top: -1px;
+}
+*/
+
