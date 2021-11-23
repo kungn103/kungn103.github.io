@@ -1,87 +1,101 @@
 
 body {
   background-color:  black;
-  font-family: barlow;
-}
-
-body.hover{
-  cursor: ;
+  cursor: url('cursor.cur'), auto;
+  overflow: hidden;
 }
 
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-
+/*heads */
 
 .door {
-  margin-left:600px;
-  margin-top: 300px;
-  /*display: flex;*/
+ align-items: center;
+ position: absolute;
 }
-
 
 .heads{
   display: inline-flex;
   flex-direction: row;
-}
-
-.heads{
   z-index: 1;
+  position: relative;
+  transform: translate(50%, 230%);
 }
 
 .eyes{
- position: absolute;
- top: 40%;
-/* transform: translate(-30%);*/
- width: 100%;
- z-index: 2;
- text-align: center;
- margin-left: 105%;
+  position: absolute;
+  align-items: center; 
+  transform: translate(20%, -300%);
+  z-index: 2;
 }
 
 .eye{
-  width: 70px;
-  height: 70px;
+  width: 15px;
+  height: 15px;
   background-color: white;
   display: inline-flex;
-  margin-left: 50px;
+  margin-left: 12px;
   border-radius: 50%;
   position: relative;
-  overflow: hidden;
+  top: 10%;
 }
 
 .ball{
-  width: 40px;
-  height: 40px;
+  width: 8px;
+  height: 8px;
   background:#1c1c1c;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius: 50%;
-  /*z-index: 3;*/
 }
 
-.sound{
-  /*display: flex;
-  flex-direction: row;*/
-  position: absolute;
-  margin-left: 1240px;
-  margin-top: 100px;
-  transition: transform 2s ease;
+/*lips*/
 
+.mouth{
+  width: 100%;
+  z-index: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.upper-lip path{
+  z-index: 4;
+}
+
+.lower-lip{
+  transform: translate(0.75%, -48%);
+}
+
+.mouth:hover > .lowerlip {
+  transform: translate(0%, 50%);
+}
+
+/*volume setup*/
+
+.sound{
+  position: absolute;
+  margin-left: 80vw;
+  margin-top: 80vh;
+  transition: transform 1s ease;
+
+}
+
+a{
+  cursor: url('cursor1.cur'), auto;
 }
 
 .sound:hover {
-  transform:  scale(1.5);
+  transform:  scale(1.1);
+  cursor: url('cursor.cur'), auto;
 }
 
-
-/*.sound:hover{
-margin-top: -1px;
-}
-*/
 

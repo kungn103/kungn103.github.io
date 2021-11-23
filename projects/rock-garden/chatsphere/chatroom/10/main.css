@@ -1,0 +1,190 @@
+
+body {
+  background-color:  black;
+  cursor: url('cursor.cur'), auto;
+  overflow: hidden;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /*background-color: palegreen*/;
+}
+
+/*eyes*/
+
+.eyes{
+  position: absolute;
+  align-items: center; 
+  transform: translate(75%, -400%);
+  z-index: 2;
+}
+
+.eye{
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  display: inline-flex;
+  margin-left: 12px;
+  border-radius: 50%;
+  position: relative;
+  top: 10%;
+}
+
+.ball{
+  width: 8px;
+  height: 8px;
+  background:#1c1c1c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
+
+/*heads*/
+
+.heads{
+  width: 100vw;
+  height: 100vh;
+}
+
+.head-1{
+  position: absolute;
+  margin-top: 10vh;
+  margin-left: 20vw;
+  transition: transform 2s ease;
+}
+
+.head-1:hover{
+ transform: scale(5);
+}
+
+.head-2{
+  position: absolute;
+  margin-top: 7vh;
+  margin-left: 50vw;
+  transition: transform 2s ease;
+}
+
+.head-2:hover{
+ transform: scale(5);
+}
+
+.head-3{
+  position: absolute;
+  margin-top: 45vh;
+  margin-left: 80vw;
+  transition: transform 5s ease;
+}
+
+.head-3:hover{
+ transform: scale(5);
+}
+
+.head-4{
+  position: absolute;
+  margin-top: 50vh;
+  margin-left: 10vw;
+  transition: transform 4s ease;
+}
+
+.head-4:hover{
+ transform: scale(5);
+}
+
+.head-5{
+  position: absolute;
+  margin-top: 40vh;
+  margin-left: 33vw;
+  transition: transform 4s ease;
+}
+
+.head-5:hover{
+ transform: scale(5);
+}
+
+.head-6{
+  position: absolute;
+  margin-top: 40vh;
+  margin-left: 56vw;
+  transition: transform 2s ease;
+}
+
+.head-6:hover{
+ transform: scale(5);
+}
+
+.head-7{
+  position: absolute;
+  margin-top: 75vh;
+  margin-left: 20vw;
+  transition: transform 3s ease;
+}
+
+.head-7:hover{
+ transform: scale(5);
+}
+
+.head-8{
+  position: absolute;
+  margin-top: 70vh;
+  margin-left: 42vw;
+  transition: transform 5s ease;
+}
+
+.head-8:hover{
+ transform: scale(5);
+}
+
+.head-9{
+  position: absolute;
+  margin-top: 72vh;
+  margin-left: 66vw;
+  transition: transform 2s ease;
+}
+
+.head-9:hover{
+ transform: scale(5);
+}
+
+.head-10{
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 80vw;
+  transition: transform 4s ease;
+}
+
+.head-10:hover{
+ transform: scale(5);
+}
+
+/*volume setup*/
+
+.sound{
+  position: fixed;
+  margin-left: 80vw;
+  margin-top: 80vh;
+  transition: transform 1s ease;
+
+}
+
+a{
+  cursor: url('cursor1.cur'), auto;
+}
+
+.sound:hover {
+  transform:  scale(1.1);
+  cursor: url('cursor.cur'), auto;
+}
+
+
