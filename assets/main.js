@@ -12,6 +12,10 @@ function enterName() {
   document.getElementById("welcome").innerHTML = text;
 }
 
-
 window.onload = enterName()
+
+
+
+
+
 

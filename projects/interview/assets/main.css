@@ -1,14 +1,14 @@
 
 body {
+  background-color: white;
   font-family: futura; 
   font-style: bold;
   font-size: 24px;
   text-align: center;
-  color:#434343 ;
+  color:#434343;
   padding-top: 50px;
   padding-right: 120px;
   padding-left: 120px;
-  padding
 }
 
 body:hover{

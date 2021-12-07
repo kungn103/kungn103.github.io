@@ -1,35 +1,76 @@
 body{
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 	font-family: 'Barlow', sans-serif;
 	background-color: darkslategray;
 	color: whitesmoke;
 	text-align: center;
-	padding: 200px;
 	cursor: url('cursor.cur'), auto;
+	animation: colorshift 3.7s infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	-webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 }
 
-.navigation{
+.content{
 	font-size: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
 
-a:link{
-	color: whitesmoke;
+/*eyes*/
+
+.eyes{
+  position: absolute;
+  align-items: center; 
+  z-index: 2;
+  transform: rotate(-45deg);
+  transform: translate(11%, -490%);
 }
 
-a:active{
-	color: greenyellow;
+.eye{
+  width: 5vw;
+  height: 5vw;
+  background-color: white;
+  display: inline-flex;
+  margin-left: 4vw;
+  border-radius: 50%;
+  position: relative;
+  top: 10%;
 }
 
-a:visited{
-	color: lightgrey;
+.ball{
+  width: 3vw;
+  height: 3vw;
+  background:#1c1c1c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
 }
 
+/*heads*/
 
-.nav1{
-	padding-top: 20px;
-	padding-bottom: 50px;
+.head{
+  position: absolute;
+  transition: transform 2s ease;
+  margin-left: 30vw;
+  bottom: 20vh;
+  z-index: 1;
 }
 
-.nav2{
-	padding-bottom: 50px;
+.instructions{
+	margin-top: 50vh;
+	font-size: 3vh;
+}
+
+h1{
+	font-size: 9vh;
 }
